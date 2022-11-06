@@ -14,6 +14,17 @@
 			"patterns": [{
 				"name": "keyword.control.nome",
 				"match": "\\b(if|while|for|return)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\bpoint ([a-z0-9]+)  ([0-9]+)\\b",
+				"captures": {
+					"1": {
+						"name": "support.variable.property"
+					},
+					"2": {
+						"name": "entity.other.attribute-name"
+					}
+				}
 			}]
 		},
 		"strings": {
