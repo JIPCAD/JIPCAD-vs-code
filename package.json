@@ -1,0 +1,25 @@
+{
+  "name": "nome3language",
+  "displayName": "NOME3 Language Support",
+  "description": "This is a language that can create intricate 3DCAD design models for the JIPCAD community",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "nome",
+      "aliases": ["NOME", "nome"],
+      "extensions": [".nom"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "nome",
+      "scopeName": "source.nom",
+      "path": "./syntaxes/nome.tmLanguage.json"
+    }]
+  }
+}
