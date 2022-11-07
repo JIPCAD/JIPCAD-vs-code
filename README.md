@@ -1,6 +1,6 @@
-# nome3language README
+# NOME3 Language Extension README
 
-This is the README for your extension "nome3language". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "NOME 3 Language Extension". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
