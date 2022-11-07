@@ -16,15 +16,116 @@
 				"match": "\\b(if|while|for|return)\\b"
 			},{
 				"name": "keyword.control.nome",
-				"match": "\\bpoint ([a-z0-9]+)  ([0-9]+)\\b",
-				"captures": {
-					"1": {
-						"name": "support.variable.property"
-					},
-					"2": {
-						"name": "entity.other.attribute-name"
-					}
-				}
+				"match": "\\b(point|endpoint)\\b"
+			},
+			{
+				"name": "keyword.control.nome",
+				"match": "\\b(surface|endsurface)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(group|endgroup)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(polyline|endpolyline)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(bspline|endbspline)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(instance|endinstance)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(sweep|endsweep)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(torus|endtorus)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(bank|endbank)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(controlpoint|endcontrolpoint)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(sweepmorph|endsweepmorph)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(morphvisualizer|endmorphvisualizer)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(circle|endcircle)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(Disk|enddisk)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(cylinder|endcylinder)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(funnel|endfunnel)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(sphere|endsphere)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(ellipsoid|endellipsoid)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(torusknot|endtorusknot)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(mobiusstrip|endmobiusstrip)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(dupin|enddupin)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(gencartesiansurf|endgencartesiansurf)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(genparametricsurf|endgenparametricsurf)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(genimplicitsurf|endgenimplicitsurf)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(camera|endcamera)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(camera|endcamera)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(camera|endcamera)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(light|endlight)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(frontcolor|endfrontcolor)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(camera|endcamera)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(backcolor|endbackcolor)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(backface|endbackface)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(subdivision|endsubdivision)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(offset|endoffset)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(include|endinclude)\\b"
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\b(mesh|endmesh)\\b"
+			},{
+				"name": "keyword.other",
+				"match": "\\b(set|list|expr|var|rotate|scale|translate)\\b"
 			}]
 		},
 		"strings": {
