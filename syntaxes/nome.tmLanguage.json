@@ -3,6 +3,9 @@
 	"name": "NOME",
 	"patterns": [
 		{
+			"include": "#comments"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -136,6 +139,88 @@
 				{
 					"name": "constant.character.escape.nome",
 					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.number-sign.nome",
+					"begin": "(*",
+					"beginCaptures": {
+						"0":{
+							"name": "punctuation.definition.comment.nome"
+						}
+					},
+					"end": "*)",
+					"endCaptures": {
+						"0":{
+							"name": "punctuation.definition.comment.nome"
+						}
+					}
+				},
+				{
+					"name": "comment.block.empty.tpl",
+					"begin": "/\\*\\*(?!/)",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.nome"
+						}
+					},
+					"end": "\\*/",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.nome"
+						}
+					},
+					"patterns": [
+						{
+							"include": "#docblock"
+						}
+					]
+				},
+				{
+					"name": "comment.block.nome",
+					"begin": "(/\\*)(?:\\s*((@)internal)(?=\\s|(\\*/)))?",
+					"beginCaptures": {
+						"1": {
+							"name": "punctuation.definition.comment.nome"
+						},
+						"2": {
+							"name": "storage.type.internaldeclaration.nome"
+						},
+						"3": {
+							"name": "punctuation.decorator.internaldeclaration.nome"
+						}
+					},
+					"end": "\\*/",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.nome"
+						}
+					}
+				},
+				{
+					"begin": "(^[ \\t]+)?((//)(?:\\s*((@)internal)(?=\\s|$))?)",
+					"beginCaptures": {
+						"1": {
+							"name": "punctuation.whitespace.comment.leading.nome"
+						},
+						"2": {
+							"name": "comment.line.double-slash.nome"
+						},
+						"3": {
+							"name": "punctuation.definition.comment.nome"
+						},
+						"4": {
+							"name": "storage.type.internaldeclaration.nome"
+						},
+						"5": {
+							"name": "punctuation.decorator.internaldeclaration.nome"
+						}
+					},
+					"end": "(?=$)",
+					"contentName": "comment.line.double-slash.nome"
 				}
 			]
 		}

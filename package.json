@@ -20,6 +20,10 @@
       "language": "nome",
       "scopeName": "source.nom",
       "path": "./syntaxes/nome.tmLanguage.json"
+    }],
+    "commands": [{
+      "command": "nome3.seeDocumentation",
+      "title": "Open NOME Documentation"
     }]
   }
 }
