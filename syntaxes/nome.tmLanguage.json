@@ -160,7 +160,38 @@
 			},
 			{
 				"name": "keyword.control.nome",
-				"match": "\\bbank[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\bbank[\\s]+([a-zA-Z0-9]+)[\\n\\s\\t\\f\\t]*(set|list)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					},
+					"2":{
+						"name":"keyword.other"
+					}
+				}
+			},
+			{
+				"name": "keyword.control.nome",
+				"match": "\\bmesh[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\instance[\\s]+([a-zA-Z0-9]+)[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					},
+					"2":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\set[\\s]+([a-zA-Z0-9]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
