@@ -107,6 +107,9 @@
 				"match": "\\b(camera|endcamera)\\b"
 			},{
 				"name": "keyword.control.nome",
+				"match": "\\b(face|endface)\\b"
+			},{
+				"name": "keyword.control.nome",
 				"match": "\\b(light|endlight)\\b"
 			},{
 				"name": "keyword.control.nome",
@@ -198,7 +201,7 @@
 					}
 				}
 			},{
-				"name": "keyword.other",
+				"name": "keyword.control.nome",
 				"match": "\\bfunnel[\\s]+([a-zA-Z0-9]+)\\b",
 				"captures":{
 					"1":{
@@ -206,7 +209,7 @@
 					}
 				}
 			},{
-				"name": "keyword.other",
+				"name": "keyword.control.nome",
 				"match": "\\btunnel[\\s]+([a-zA-Z0-9]+)\\b",
 				"captures":{
 					"1":{
@@ -214,7 +217,7 @@
 					}
 				}
 			},{
-				"name": "keyword.other",
+				"name": "keyword.control.nome",
 				"match": "\\bsphere[\\s]+([a-zA-Z0-9]+)\\b",
 				"captures":{
 					"1":{
@@ -222,7 +225,7 @@
 					}
 				}
 			},{
-				"name": "keyword.other",
+				"name": "keyword.control.nome",
 				"match": "\\bcontrolpoint[\\s]+([a-zA-Z0-9]+)\\b",
 				"captures":{
 					"1":{
@@ -230,7 +233,7 @@
 					}
 				}
 			},{
-				"name": "keyword.other",
+				"name": "keyword.control.nome",
 				"match": "\\bpolyline[\\s]+([a-zA-Z0-9]+)\\b",
 				"captures":{
 					"1":{
@@ -238,7 +241,7 @@
 					}
 				}
 			},{
-				"name": "keyword.other",
+				"name": "keyword.control.nome",
 				"match": "\\bbeziercurve[\\s]+([a-zA-Z0-9]+)\\b",
 				"captures":{
 					"1":{
@@ -246,7 +249,7 @@
 					}
 				}
 			},{
-				"name": "keyword.other",
+				"name": "keyword.control.nome",
 				"match": "\\bbspline[\\s]+([a-zA-Z0-9]+)\\b",
 				"captures":{
 					"1":{
@@ -254,15 +257,7 @@
 					}
 				}
 			},{
-				"name": "keyword.other",
-				"match": "\\bface[\\s]+([a-zA-Z0-9]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
-					}
-				}
-			},{
-				"name": "keyword.other",
+				"name": "keyword.control.nome",
 				"match": "\\bsweep[\\s]+([a-zA-Z0-9]+)\\b",
 				"captures":{
 					"1":{
@@ -270,7 +265,7 @@
 					}
 				}
 			},{
-				"name": "keyword.other",
+				"name": "keyword.control.nome",
 				"match": "\\bsweepmorph[\\s]+([a-zA-Z0-9]+)\\b",
 				"captures":{
 					"1":{
