@@ -148,19 +148,19 @@
 				}
 			},{
 				"name": "keyword.control.nome",
-				"match": "\\bsurface[\\s]+([a-zA-Z0-9]+)[\\s]+(color)\\b",
+				"match": "\\bsurface[\\s]+([a-zA-Z0-9]+)([\\s]+color)*\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
 					},
 					"2":{
-						"name":"keyword.other"
+						"name":"variable.language"
 					}
 				}
 			},
 			{
 				"name": "keyword.control.nome",
-				"match": "\\bbank[\\s]+([a-zA-Z0-9]+)[\\n\\s\\t\\f\\t]*(set|list)\\b",
+				"match": "\\bbank[\\s]+([a-zA-Z0-9]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -180,7 +180,7 @@
 				}
 			},{
 				"name": "keyword.control.nome",
-				"match": "\\instance[\\s]+([a-zA-Z0-9]+)[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\binstance[\\s]+([a-zA-Z0-9]+)[\\s]+([a-zA-Z0-9]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -191,10 +191,210 @@
 				}
 			},{
 				"name": "keyword.other",
-				"match": "\\set[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\bset[\\s]+([a-zA-Z0-9]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bfunnel[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\btunnel[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bsphere[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bcontrolpoint[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bpolyline[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bbeziercurve[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bbspline[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bface[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bsweep[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bsweepmorph[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bmorphvisualizer[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},
+			{
+				"name": "keyword.other",
+				"match": "\\bgroup[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},
+			{
+				"name": "keyword.other",
+				"match": "\\bcircle[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bDisk[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bcylinder[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bcone[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bellipsoid[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\btorus[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\btorusknot[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bmobiusstrip[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bdupin[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bgencartesiansurf[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bgenparametricsurf[\\s]+([a-zA-Z0-9]+)[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					},
+					"2":{
+						"name":"string.quoted.double"
+					}
+				}
+			},{
+				"name": "keyword.other",
+				"match": "\\bgenimplicitsurf[\\s]+([a-zA-Z0-9]+)[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double"
+					},
+					"2":{
+						"name":"string.quoted.double"
 					}
 				}
 			}]
