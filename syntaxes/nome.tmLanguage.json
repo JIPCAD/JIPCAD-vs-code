@@ -6,6 +6,12 @@
 			"include": "#paren-expression"
 		},
 		{
+			"include": "#newtag"
+		},
+		{
+			"include":"#var-definition"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -131,6 +137,51 @@
 				"match": "\\b(set|list|expr|var|rotate|scale|translate)\\b"
 			}]
 		},
+		"var-definition": {
+			"patterns": [{
+				"name": "keyword.control.nome",
+				"match": "\\bpoint[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\bsurface[\\s]+([a-zA-Z0-9]+)[\\s]+(color)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					},
+					"2":{
+						"name":"keyword.other"
+					}
+				}
+			},
+			{
+				"name": "keyword.control.nome",
+				"match": "\\bbank[\\s]+([a-zA-Z0-9]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
+					}
+				}
+			}]
+			
+		},
+		"newtag": {
+			"name": "keyword.control.jknob",
+			"match": "\\bLOAD ([a-z\/\\.]+) INTO ([a-zA-Z]+)\\b",
+			"captures": {
+				"1": {
+					"name": "string.quoted.double.nome"
+				},
+				"2": {
+					"name": "support.variable.property"
+				}
+			}
+		},
+
 		"strings": {
 			"name": "string.quoted.double.nome",
 			"begin": "\"",
