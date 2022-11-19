@@ -55,6 +55,8 @@
         ["subdivision","endsubdivision"],
         ["offset","endoffset"],
         ["include", "endinclude"],
+        ["crosssection","endcrosssection"],
+        ["path","endpath"],
         ["(*", "*)"]
 
     ],

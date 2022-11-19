@@ -13,6 +13,8 @@
 		},
 		{
 			"include": "#keywords"
+		},{
+			"include": "#parameters"
 		},
 		{
 			"include": "#strings"
@@ -135,15 +137,18 @@
 			},{
 				"name": "keyword.control.nome",
 				"match": "\\b(mesh|endmesh)\\b"
-			},{
+			}]
+		},
+		"parameters":{
+			"patterns": [{
 				"name": "keyword.other",
-				"match": "\\b(set|list|expr|var|rotate|scale|translate)\\b"
+				"match": "\\b(crosssection|endpath|endcrosssection|path|order|segs|mintorsion|azimuth|set|list|expr|var|rotate|scale|translate)\\b"
 			}]
 		},
 		"var-definition": {
 			"patterns": [{
 				"name": "keyword.control.nome",
-				"match": "\\bpoint[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\bpoint[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -151,7 +156,7 @@
 				}
 			},{
 				"name": "keyword.control.nome",
-				"match": "\\bsurface[\\s]+([a-zA-Z0-9]+)([\\s]+color)*\\b",
+				"match": "\\bsurface[\\s]+([^;:\\s]+)([\\s]+color)*\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -163,7 +168,7 @@
 			},
 			{
 				"name": "keyword.control.nome",
-				"match": "\\bbank[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\bbank[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -175,7 +180,7 @@
 			},
 			{
 				"name": "keyword.control.nome",
-				"match": "\\bmesh[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\bmesh[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -183,7 +188,7 @@
 				}
 			},{
 				"name": "keyword.control.nome",
-				"match": "\\binstance[\\s]+([a-zA-Z0-9]+)[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\binstance[\\s]+([^;:\\s]+)[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -194,7 +199,7 @@
 				}
 			},{
 				"name": "keyword.other",
-				"match": "\\bset[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\bset[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -202,7 +207,7 @@
 				}
 			},{
 				"name": "keyword.control.nome",
-				"match": "\\bfunnel[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\bfunnel[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -210,7 +215,7 @@
 				}
 			},{
 				"name": "keyword.control.nome",
-				"match": "\\btunnel[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\btunnel[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -218,7 +223,7 @@
 				}
 			},{
 				"name": "keyword.control.nome",
-				"match": "\\bsphere[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\bsphere[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -226,7 +231,7 @@
 				}
 			},{
 				"name": "keyword.control.nome",
-				"match": "\\bcontrolpoint[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\bcontrolpoint[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -234,7 +239,7 @@
 				}
 			},{
 				"name": "keyword.control.nome",
-				"match": "\\bpolyline[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\bpolyline[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -242,7 +247,7 @@
 				}
 			},{
 				"name": "keyword.control.nome",
-				"match": "\\bbeziercurve[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\bbeziercurve[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -250,7 +255,7 @@
 				}
 			},{
 				"name": "keyword.control.nome",
-				"match": "\\bbspline[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\bbspline[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -258,7 +263,7 @@
 				}
 			},{
 				"name": "keyword.control.nome",
-				"match": "\\bsweep[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\bsweep[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -266,15 +271,15 @@
 				}
 			},{
 				"name": "keyword.control.nome",
-				"match": "\\bsweepmorph[\\s]+([a-zA-Z0-9]+)\\b",
+				"match": "\\bsweepmorph[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
 					}
 				}
 			},{
-				"name": "keyword.other",
-				"match": "\\bmorphvisualizer[\\s]+([a-zA-Z0-9]+)\\b",
+				"name": "keyword.control.nome",
+				"match": "\\bmorphvisualizer[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -282,8 +287,8 @@
 				}
 			},
 			{
-				"name": "keyword.other",
-				"match": "\\bgroup[\\s]+([a-zA-Z0-9]+)\\b",
+				"name": "keyword.control.nome",
+				"match": "\\bgroup[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -291,88 +296,88 @@
 				}
 			},
 			{
-				"name": "keyword.other",
-				"match": "\\bcircle[\\s]+([a-zA-Z0-9]+)\\b",
+				"name": "keyword.control.nome",
+				"match": "\\bcircle[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
 					}
 				}
 			},{
-				"name": "keyword.other",
-				"match": "\\bDisk[\\s]+([a-zA-Z0-9]+)\\b",
+				"name": "keyword.control.nome",
+				"match": "\\bDisk[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
 					}
 				}
 			},{
-				"name": "keyword.other",
-				"match": "\\bcylinder[\\s]+([a-zA-Z0-9]+)\\b",
+				"name": "keyword.control.nome",
+				"match": "\\bcylinder[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
 					}
 				}
 			},{
-				"name": "keyword.other",
-				"match": "\\bcone[\\s]+([a-zA-Z0-9]+)\\b",
+				"name": "keyword.control.nome",
+				"match": "\\bcone[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
 					}
 				}
 			},{
-				"name": "keyword.other",
-				"match": "\\bellipsoid[\\s]+([a-zA-Z0-9]+)\\b",
+				"name": "keyword.control.nome",
+				"match": "\\bellipsoid[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
 					}
 				}
 			},{
-				"name": "keyword.other",
-				"match": "\\btorus[\\s]+([a-zA-Z0-9]+)\\b",
+				"name": "keyword.control.nome",
+				"match": "\\btorus[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
 					}
 				}
 			},{
-				"name": "keyword.other",
-				"match": "\\btorusknot[\\s]+([a-zA-Z0-9]+)\\b",
+				"name": "keyword.control.nome",
+				"match": "\\btorusknot[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
 					}
 				}
 			},{
-				"name": "keyword.other",
-				"match": "\\bmobiusstrip[\\s]+([a-zA-Z0-9]+)\\b",
+				"name": "keyword.control.nome",
+				"match": "\\bmobiusstrip[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
 					}
 				}
 			},{
-				"name": "keyword.other",
-				"match": "\\bdupin[\\s]+([a-zA-Z0-9]+)\\b",
+				"name": "keyword.control.nome",
+				"match": "\\bdupin[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
 					}
 				}
 			},{
-				"name": "keyword.other",
-				"match": "\\bgencartesiansurf[\\s]+([a-zA-Z0-9]+)\\b",
+				"name": "keyword.control.nome",
+				"match": "\\bgencartesiansurf[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
 					}
 				}
 			},{
-				"name": "keyword.other",
-				"match": "\\bgenparametricsurf[\\s]+([a-zA-Z0-9]+)[\\s]+([a-zA-Z0-9]+)\\b",
+				"name": "keyword.control.nome",
+				"match": "\\bgenparametricsurf[\\s]+([^;:\\s]+)[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double.nome"
@@ -382,14 +387,22 @@
 					}
 				}
 			},{
-				"name": "keyword.other",
-				"match": "\\bgenimplicitsurf[\\s]+([a-zA-Z0-9]+)[\\s]+([a-zA-Z0-9]+)\\b",
+				"name": "keyword.control.nome",
+				"match": "\\bgenimplicitsurf[\\s]+([^;:\\s]+)[\\s]+([^;:\\s]+)\\b",
 				"captures":{
 					"1":{
 						"name":"string.quoted.double"
 					},
 					"2":{
 						"name":"string.quoted.double"
+					}
+				}
+			},{
+				"name": "keyword.control.nome",
+				"match": "\\bface[\\s]+([^;:\\s]+)\\b",
+				"captures":{
+					"1":{
+						"name":"string.quoted.double.nome"
 					}
 				}
 			}]
