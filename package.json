@@ -23,7 +23,10 @@
     }],
     "commands": [{
       "command": "nome3.seeDocumentation",
-      "title": "Open NOME Documentation"
+      "title": "NOME3: Open NOME Documentation"
+    },{
+      "command": "nome3.runNomeCode",
+      "title": "NOME3: Run NOME Code"
     }]
   }
 }

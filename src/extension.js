@@ -19,7 +19,6 @@ function activate(context){
 	let runNomeCode = vscode.commands.registerCommand('nome3.runNomeCode', function () {
 		vscode.window.showInformationMessage('Code Run successfully!');
 	});
-
 	context.subscriptions.push(seeDocumentation);
 	context.subscriptions.push(runNomeCode);
 }

@@ -6,6 +6,9 @@
 			"include": "#paren-expression"
 		},
 		{
+			"include": "#single-line-comment"
+		},
+		{
 			"include": "#newtag"
 		},
 		{
@@ -442,6 +445,17 @@
 				"0": { "name": "comment.block" }
 			},
 			"name": "comment.block.documentation"
+		},
+		"single-line-comment":{
+			"begin": "###",
+			"end":"[\\n\\r]+",
+			"beginCaptures": {
+				"0":{"name": "comment.block"}
+			},
+			"endCaptures": {
+				"0":{"name": "comment.block"}
+			},
+			"name":"comment.block.documentation"
 		}
 	},
 	"scopeName": "source.nom"
