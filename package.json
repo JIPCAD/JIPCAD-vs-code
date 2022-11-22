@@ -32,6 +32,12 @@
     },{
       "command": "nome.runNomeCode",
       "title": "NOME: Run NOME Code"
+    },{
+      "command": "nome.runNomeCode",
+      "title": "NOME: Run NOME Code"
+    },{
+      "command": "nome.toggleBlockComment",
+      "title": "NOME: Run NOME Code"
     }],
     "semanticTokenTypes": [{
       "id":"templateType",

@@ -19,8 +19,9 @@ function activate(context){
 		});
 		
 	});
+
 	let runNomeCode = vscode.commands.registerCommand('nome.runNomeCode', function () {
-		let uri = vscode.Uri.parse('.src\\JIPCAD\\Nome3.exe');
+		let uri = vscode.Uri.parse('.\\JIPCAD\\Nome3.exe');
 		const thing = vscode.env.openExternal(uri);
 		thing.then(function(value) {
 			vscode.window.showInformationMessage('Code Run successfully!');
