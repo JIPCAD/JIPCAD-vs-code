@@ -20,16 +20,25 @@ function activate(context){
 		
 	});
 	let runNomeCode = vscode.commands.registerCommand('nome.runNomeCode', function () {
-		let variable = new ActiveXObject("Shell.Application");
-		let command = "src\JIPCAD\Nome3.exe";
-		const thing = variable.ShellExecute(command,"","","open","1");
+		let uri = vscode.Uri.parse('.src\\JIPCAD\\Nome3.exe');
+		const thing = vscode.env.openExternal(uri);
 		thing.then(function(value) {
 			vscode.window.showInformationMessage('Code Run successfully!');
 			console.log(value);
-		},function(error){
+		}, function(error){
 			vscode.window.showInformationMessage('Code Failed to Run');
 			console.log(error);
-		})
+		});
+		// let variable = new ActiveXObject("Shell.Application");
+		// let command = "src\JIPCAD\Nome3.exe";
+		// const thing = variable.ShellExecute(command,"","","open","1");
+		// thing.then(function(value) {
+		// 	vscode.window.showInformationMessage('Code Run successfully!');
+		// 	console.log(value);
+		// },function(error){
+		// 	vscode.window.showInformationMessage('Code Failed to Run');
+		// 	console.log(error);
+		// })
 	});
 	context.subscriptions.push(seeDocumentation);
 	context.subscriptions.push(runNomeCode);
