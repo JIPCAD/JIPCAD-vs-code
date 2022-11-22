@@ -10,6 +10,7 @@
     "Programming Languages"
   ],
   "main": "./src/extension.js",
+  "provider":"./src/semantictokenprovider.js",
   "activationEvents": [
     "onCommand:nome.seeDocumentation",
     "onCommand:nome.runNomeCode"
@@ -21,6 +22,11 @@
       "extensions": [".nom"],
       "configuration": "./language-configuration.json"
     }],
+    "configurationDefaults": {
+      "[nome]":{
+        "editor.semanticHighlighting.enabled": true
+      }
+    },
     "grammars": [{
       "language": "nome",
       "scopeName": "source.nom",
