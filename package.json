@@ -9,6 +9,11 @@
   "categories": [
     "Programming Languages"
   ],
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onCommand:nome.seeDocumentation",
+    "onCommand:nome.runNomeCode"
+  ],
   "contributes": {
     "languages": [{
       "id": "nome",
@@ -22,11 +27,20 @@
       "path": "./syntaxes/nome.tmLanguage.json"
     }],
     "commands": [{
-      "command": "nome3.seeDocumentation",
-      "title": "NOME3: Open NOME Documentation"
+      "command": "nome.seeDocumentation",
+      "title": "NOME: Open NOME Documentation"
     },{
-      "command": "nome3.runNomeCode",
-      "title": "NOME3: Run NOME Code"
+      "command": "nome.runNomeCode",
+      "title": "NOME: Run NOME Code"
+    }],
+    "semanticTokenTypes": [{
+      "id":"templateType",
+      "superType": "type",
+      "description": "A template type."
+    }],
+    "semanticTokenModifiers": [{
+      "id":"native",
+      "description": "Annotates a symbol that is implemented natively"
     }]
   }
 }
