@@ -21,15 +21,22 @@ function activate(context){
 	});
 
 	let runNomeCode = vscode.commands.registerCommand('nome.runNomeCode', function () {
-		let uri = vscode.Uri.parse('.\\JIPCAD\\Nome3.exe');
-		const thing = vscode.env.openExternal(uri);
-		thing.then(function(value) {
-			vscode.window.showInformationMessage('Code Run successfully!');
-			console.log(value);
-		}, function(error){
-			vscode.window.showInformationMessage('Code Failed to Run');
-			console.log(error);
-		});
+		let terminal = vscode.window.createTerminal("Nome3 execution");
+		terminal.show(true);
+		// terminal.sendText("D:");
+		// terminal.sendText("cd DEV_JIPCAD/vscode_extension/nome3language")
+		terminal.sendText("cd JIPCAD");
+		terminal.sendText("Nome3.exe")
+
+		// let uri = vscode.Uri.parse('.\\JIPCAD\\Nome3.exe');
+		// const thing = vscode.env.openExternal(uri);
+		// thing.then(function(value) {
+		// 	vscode.window.showInformationMessage('Code Run successfully!');
+		// 	console.log(value);
+		// }, function(error){
+		// 	vscode.window.showInformationMessage('Code Failed to Run');
+		// 	console.log(error);
+		// });
 		// let variable = new ActiveXObject("Shell.Application");
 		// let command = "src\JIPCAD\Nome3.exe";
 		// const thing = variable.ShellExecute(command,"","","open","1");
