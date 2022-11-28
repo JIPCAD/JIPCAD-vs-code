@@ -10,7 +10,6 @@
     "Programming Languages"
   ],
   "main": "./src/extension.js",
-  "provider":"./src/semantictokenprovider.js",
   "activationEvents": [
     "onCommand:nome.seeDocumentation",
     "onCommand:nome.runNomeCode"
@@ -35,9 +34,6 @@
     "commands": [{
       "command": "nome.seeDocumentation",
       "title": "NOME: Open NOME Documentation"
-    },{
-      "command": "nome.runNomeCode",
-      "title": "NOME: Run NOME Code"
     },{
       "command": "nome.runNomeCode",
       "title": "NOME: Run NOME Code"
