@@ -13,7 +13,8 @@
   "provider":"./src/semantictokenprovider.js",
   "activationEvents": [
     "onCommand:nome.seeDocumentation",
-    "onCommand:nome.runNomeCode"
+    "onCommand:nome.runNomeCode",
+    "onCommand:nome.configurePath"
   ],
   "contributes": {
     "languages": [{
@@ -41,6 +42,9 @@
     },{
       "command": "nome.runNomeCode",
       "title": "NOME: Run NOME Code"
+    },{
+      "command": "nome.configurePath",
+      "title": "NOME: Configure Executable Path"
     }],
     "semanticTokenTypes": [{
       "id":"templateType",
