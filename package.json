@@ -18,8 +18,8 @@
   "contributes": {
     "languages": [{
       "id": "nome",
-      "aliases": ["NOME", "nome"],
-      "extensions": [".nom"],
+      "aliases": ["NOME", "nome","JIPCAD","jipcad"],
+      "extensions": [".nom",".jipcad"],
       "configuration": "./language-configuration.json"
     }],
     "configurationDefaults": {
@@ -40,9 +40,6 @@
       "title": "NOME: Run NOME Code"
     },{
       "command": "nome.runNomeCode",
-      "title": "NOME: Run NOME Code"
-    },{
-      "command": "nome.toggleBlockComment",
       "title": "NOME: Run NOME Code"
     }],
     "semanticTokenTypes": [{

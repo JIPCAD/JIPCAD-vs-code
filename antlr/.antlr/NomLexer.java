@@ -1,4 +1,4 @@
-// Generated from d:\DEV_JIPCAD\vscode_extension\nome3language\nom.g4 by ANTLR 4.9.2
+// Generated from d:\DEV_JIPCAD\vscode_extension\nome3language\antlr\Nom.g4 by ANTLR 4.9.2
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -161,7 +161,7 @@ public class NomLexer extends Lexer {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "nom.g4"; }
+	public String getGrammarFileName() { return "Nom.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
