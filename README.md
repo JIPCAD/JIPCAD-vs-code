@@ -5,7 +5,7 @@ This is a [Visual Studio Code](https://code.visualstudio.com/) extension for the
 # Release Notes:
 
 ## 0.0.0
-Initial Release of the **Visual Studio Code** NOME language extension. 
+Initial Release of the **Visual Studio Code NOME language extension**. 
 
 # Features
 1. **Autocompletion of commands** 
