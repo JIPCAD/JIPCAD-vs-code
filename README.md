@@ -1,65 +1,30 @@
 # NOME3 Language Extension README
 
-This is the README for your extension "NOME 3 Language Extension". After writing up a brief description, we recommend including the following sections.
+This is a [Visual Studio Code](https://code.visualstudio.com/) extension for the NOME3 language used for **3D-computer-aided-design** on the **[JIPCAD](https://jipcad.github.io/docs/)** software, supervised by Prof. Carlo Sequin and developed by the JIPCAD group, a dedicated team of undergraduate and graduate students. 
 
-## Features
+# Release Notes:
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## 0.0.0
+Initial Release of the **Visual Studio Code** NOME language extension. 
 
-For example if there is an image subfolder under your extension project workspace:
+# Features
+1. **Autocompletion of commands** 
+<img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/images/autocompletion.gif">
 
-\!\[feature X\]\(images/feature-x.png\)
+2. **Syntax coloring**
+<img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/images/syntax_highlight.png">
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+3. **Commenting**
+<img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/images/toggle_block_comment.gif">
+4. **Running of Nome Executable**
+<img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/images/run_nome.gif">
+5. **Customize directory of NOME executable**
+<img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/images/remote_running.gif">
 
-## Requirements
+# Intended Updates/Improvements
+1) **Semantic highlighting**
+2) **Syntax error reporting**
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+# Footnotes
+This extension supports files with both the (.nom, .jipcad $*$) endings. 
+Enjoy!
