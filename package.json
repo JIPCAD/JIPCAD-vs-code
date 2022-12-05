@@ -1,5 +1,5 @@
 {
-  "name": "nome3language",
+  "name": "nome",
   "displayName": "NOME3 Language Support",
   "description": "This is a language that can create intricate 3DCAD design models for the JIPCAD community",
   "version": "0.0.1",
@@ -11,12 +11,13 @@
   ],
   "main": "./src/extension.js",
   "provider":"./src/semantictokenprovider.js",
+  "publisher":"Aaron Zheng",
   "homepage": "https://github.com/JIPCAD/JIPCAD-vs-code",
   "repository": {
     "type": "git",
     "url": "https://github.com/JIPCAD/JIPCAD-vs-code"
   },
-  
+
   "bugs": {
     "url": "https://github.com/JIPCAD/JIPCAD-vs-code/issues"
   },
