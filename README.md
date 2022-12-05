@@ -16,13 +16,17 @@ Initial Release of the **Visual Studio Code** NOME language extension.
 
 3. **Commenting**
 <img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/images/toggle_block_comment.gif">
+
 4. **Running of Nome Executable**
 <img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/images/run_nome.gif">
+
 5. **Customize directory of NOME executable**
 <img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/images/remote_running.gif">
 
 # Intended Updates/Improvements
+
 1) **Semantic highlighting**
+
 2) **Syntax error reporting**
 
 # Footnotes
