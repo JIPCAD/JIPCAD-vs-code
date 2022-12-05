@@ -1,6 +1,6 @@
 # NOME3 Language Extension README
 
-This is a [Visual Studio Code](https://code.visualstudio.com/) extension for the NOME3 language used for **3D-computer-aided-design** on the **[JIPCAD](https://jipcad.github.io/docs/)** software, supervised by Prof. Carlo Sequin and developed by the JIPCAD group, a dedicated team of undergraduate and graduate students. 
+This is a [Visual Studio Code](https://code.visualstudio.com/) extension for the NOME3 language used for **3D-computer-aided-design** on the **[JIPCAD](https://jipcad.github.io/docs/)** software, supervised by Prof. Carlo Sequin and developed by the JIPCAD group.
 
 # Release Notes:
 
