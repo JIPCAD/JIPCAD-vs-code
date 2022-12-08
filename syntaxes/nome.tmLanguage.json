@@ -12,11 +12,11 @@
 			"include": "#newtag"
 		},
 		{
-			"include":"#var-definition"
+			"include": "#var-definition"
 		},
 		{
 			"include": "#keywords"
-		},{
+		}, {
 			"include": "#parameters"
 		},
 		{
@@ -25,391 +25,391 @@
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.nome",
-				"match": "\\b(if|while|for|return)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(point|endpoint)\\b"
-			},
-			{
-				"name": "keyword.control.nome",
-				"match": "\\b(surface|endsurface)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(group|endgroup)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(polyline|endpolyline)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(bspline|endbspline)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(instance|endinstance)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(sweep|endsweep)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(torus|endtorus)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(bank|endbank)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(controlpoint|endcontrolpoint)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(sweepmorph|endsweepmorph)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(morphvisualizer|endmorphvisualizer)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(circle|endcircle)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(Disk|enddisk)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(cylinder|endcylinder)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(funnel|endfunnel)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(sphere|endsphere)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(ellipsoid|endellipsoid)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(torusknot|endtorusknot)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(mobiusstrip|endmobiusstrip)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(dupin|enddupin)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(gencartesiansurf|endgencartesiansurf)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(genparametricsurf|endgenparametricsurf)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(genimplicitsurf|endgenimplicitsurf)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(camera|endcamera)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(camera|endcamera)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(camera|endcamera)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(face|endface)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(light|endlight)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(frontcolor|endfrontcolor)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(camera|endcamera)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(backcolor|endbackcolor)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(backface|endbackface)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(subdivision|endsubdivision)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(offset|endoffset)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(include|endinclude)\\b"
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\b(mesh|endmesh)\\b"
-			}]
+			"patterns": [ {
+					"name": "keyword.control.nome",
+					"match": "\\b(if|while|for|return)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(point|endpoint)\\b"
+				},
+				{
+					"name": "keyword.control.nome",
+					"match": "\\b(surface|endsurface)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(group|endgroup)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(polyline|endpolyline)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(bspline|endbspline)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(instance|endinstance)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(sweep|endsweep)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(torus|endtorus)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(bank|endbank)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(controlpoint|endcontrolpoint)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(sweepmorph|endsweepmorph)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(morphvisualizer|endmorphvisualizer)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(circle|endcircle)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(Disk|enddisk)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(cylinder|endcylinder)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(funnel|endfunnel)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(sphere|endsphere)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(ellipsoid|endellipsoid)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(torusknot|endtorusknot)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(mobiusstrip|endmobiusstrip)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(dupin|enddupin)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(gencartesiansurf|endgencartesiansurf)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(genparametricsurf|endgenparametricsurf)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(genimplicitsurf|endgenimplicitsurf)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(camera|endcamera)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(camera|endcamera)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(camera|endcamera)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(face|endface)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(light|endlight)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(frontcolor|endfrontcolor)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(camera|endcamera)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(backcolor|endbackcolor)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(backface|endbackface)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(subdivision|endsubdivision)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(offset|endoffset)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(include|endinclude)\\b"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\b(mesh|endmesh)\\b"
+				} ]
 		},
-		"parameters":{
-			"patterns": [{
-				"name": "keyword.other",
-				"match": "\\b(crosssection|endpath|endcrosssection|path|order|segs|mintorsion|azimuth|set|list|expr|var|rotate|scale|translate)\\b"
-			}]
+		"parameters": {
+			"patterns": [ {
+					"name": "keyword.other",
+					"match": "\\b(crosssection|endpath|endcrosssection|path|order|segs|mintorsion|azimuth|set|list|expr|var|rotate|scale|translate)\\b"
+				} ]
 		},
 		"var-definition": {
-			"patterns": [{
-				"name": "keyword.control.nome",
-				"match": "\\bpoint[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+			"patterns": [ {
+					"name": "keyword.control.nome",
+					"match": "\\bpoint[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bsurface[\\s]+([^;:\\s]+)([\\s]+color)*\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
-					},
-					"2":{
-						"name":"variable.language"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bsurface[\\s]+([^;:\\s]+)([\\s]+color)*\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						},
+						"2": {
+							"name": "variable.language"
+						}
 					}
-				}
-			},
-			{
-				"name": "keyword.control.nome",
-				"match": "\\bbank[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
-					},
-					"2":{
-						"name":"keyword.other"
+				},
+				{
+					"name": "keyword.control.nome",
+					"match": "\\bbank[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						},
+						"2": {
+							"name": "keyword.other"
+						}
 					}
-				}
-			},
-			{
-				"name": "keyword.control.nome",
-				"match": "\\bmesh[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				},
+				{
+					"name": "keyword.control.nome",
+					"match": "\\bmesh[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\binstance[\\s]+([^;:\\s]+)[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
-					},
-					"2":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\binstance[\\s]+([^;:\\s]+)[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						},
+						"2": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.other",
-				"match": "\\bset[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.other",
+					"match": "\\bset[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bfunnel[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bfunnel[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\btunnel[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\btunnel[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bsphere[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bsphere[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bcontrolpoint[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bcontrolpoint[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bpolyline[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bpolyline[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bbeziercurve[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bbeziercurve[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bbspline[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bbspline[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bsweep[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bsweep[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bsweepmorph[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bsweepmorph[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bmorphvisualizer[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bmorphvisualizer[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},
-			{
-				"name": "keyword.control.nome",
-				"match": "\\bgroup[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				},
+				{
+					"name": "keyword.control.nome",
+					"match": "\\bgroup[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},
-			{
-				"name": "keyword.control.nome",
-				"match": "\\bcircle[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				},
+				{
+					"name": "keyword.control.nome",
+					"match": "\\bcircle[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bDisk[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bDisk[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bcylinder[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bcylinder[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bcone[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bcone[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bellipsoid[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bellipsoid[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\btorus[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\btorus[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\btorusknot[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\btorusknot[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bmobiusstrip[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bmobiusstrip[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bdupin[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bdupin[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bgencartesiansurf[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bgencartesiansurf[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bgenparametricsurf[\\s]+([^;:\\s]+)[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
-					},
-					"2":{
-						"name":"string.quoted.double"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bgenparametricsurf[\\s]+([^;:\\s]+)[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						},
+						"2": {
+							"name": "string.quoted.double"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bgenimplicitsurf[\\s]+([^;:\\s]+)[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double"
-					},
-					"2":{
-						"name":"string.quoted.double"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bgenimplicitsurf[\\s]+([^;:\\s]+)[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double"
+						},
+						"2": {
+							"name": "string.quoted.double"
+						}
 					}
-				}
-			},{
-				"name": "keyword.control.nome",
-				"match": "\\bface[\\s]+([^;:\\s]+)\\b",
-				"captures":{
-					"1":{
-						"name":"string.quoted.double.nome"
+				}, {
+					"name": "keyword.control.nome",
+					"match": "\\bface[\\s]+([^;:\\s]+)\\b",
+					"captures": {
+						"1": {
+							"name": "string.quoted.double.nome"
+						}
 					}
-				}
-			}]
-			
+				} ]
+
 		},
 		"newtag": {
 			"name": "keyword.control.jknob",
@@ -446,16 +446,16 @@
 			},
 			"name": "comment.block.documentation"
 		},
-		"single-line-comment":{
-			"begin": "###",
-			"end":"[\\n\\r]+",
+		"single-line-comment": {
+			"begin": "#",
+			"end": "[\\n\\r]+",
 			"beginCaptures": {
-				"0":{"name": "comment.block"}
+				"0": { "name": "comment.block" }
 			},
 			"endCaptures": {
-				"0":{"name": "comment.block"}
+				"0": { "name": "comment.block" }
 			},
-			"name":"comment.block.documentation"
+			"name": "comment.block.documentation"
 		}
 	},
 	"scopeName": "source.nom"
