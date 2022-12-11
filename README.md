@@ -10,7 +10,7 @@ Enjoy!
 <img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/.github/images/autocompletion.gif">
 
 ### 2. Syntax coloring
-<img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/.github/images/syntax_highlight.gif">
+<img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/.github/images/syntax_highlight.png">
 
 ### 3. Commenting
 <img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/.github/images/toggle_block_comment.gif">
