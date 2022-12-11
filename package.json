@@ -22,11 +22,40 @@
   },
   "activationEvents": [
     "onCommand:nome.seeDocumentation",
-    "onCommand:nome.runNomeCode",
-    "onCommand:nome.configurePath"
+    "onCommand:nome.runFile",
+    "onCommand:nome.setExecutable"
   ],
   "license": "MIT",
   "contributes": {
+    "configurationDefaults": {
+      "[nome]": {
+        "editor.semanticHighlighting.enabled": true
+      }
+    },
+    "configuration": {
+      "type": "object",
+      "title": "NOME Extension Configuration",
+      "properties": {
+        "nome.executable": {
+          "type": "string",
+          "description": "Location of NOME executable"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "nome.seeDocumentation",
+        "title": "NOME: Open NOME Documentation"
+      },
+      {
+        "command": "nome.runCode",
+        "title": "NOME: Run NOME Code"
+      },
+      {
+        "command": "nome.setExecutable",
+        "title": "NOME: Configure Executable Path"
+      }
+    ],
     "languages": [
       {
         "id": "nome",
@@ -43,30 +72,11 @@
         "configuration": "./language-configuration.json"
       }
     ],
-    "configurationDefaults": {
-      "[nome]": {
-        "editor.semanticHighlighting.enabled": true
-      }
-    },
     "grammars": [
       {
         "language": "nome",
         "scopeName": "source.nom",
         "path": "./syntaxes/nome.tmLanguage.json"
-      }
-    ],
-    "commands": [
-      {
-        "command": "nome.seeDocumentation",
-        "title": "NOME: Open NOME Documentation"
-      },
-      {
-        "command": "nome.runNomeCode",
-        "title": "NOME: Run NOME Code"
-      },
-      {
-        "command": "nome.configurePath",
-        "title": "NOME: Configure Executable Path"
       }
     ],
     "semanticTokenTypes": [

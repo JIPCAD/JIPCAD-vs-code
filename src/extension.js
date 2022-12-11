@@ -4,48 +4,48 @@ const vscode = require('vscode');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-    console.log('Congratulations, your extension "nome3" is now active!');
-    let path; // define path variable
+    const EXTENSION_ID = 'nome';
+    const CONFIG = vscode.workspace.getConfiguration(EXTENSION_ID);
+    console.log(`'${EXTENSION_ID}' is now activated!`);
+
     let seeDocumentation = vscode.commands.registerCommand('nome.seeDocumentation', function () {
         let uri = vscode.Uri.parse('https://jipcad.github.io/docs/lang-ref/configuration');
         const thing = vscode.env.openExternal(uri);
         thing.then(function (value) {
             vscode.window.showInformationMessage('Website Loaded');
-            console.log(value);
+            // console.log(value);
         }, function (error) {
-            vscode.window.showInformationMessage('Website Failed to Load');
-            console.log(error);
+            vscode.window.showInformationMessage('Website Failed to Load: ' + error);
         });
-
     });
 
-    let runNomeCode = vscode.commands.registerCommand('nome.runNomeCode', function () {
-        let terminal = vscode.window.createTerminal("Nome3 execution");
-        if (path === undefined) {
-            terminal.show(true);
-            terminal.sendText("cd JIPCAD");
-            terminal.sendText("Nome3.exe");
+    let setExecutable = vscode.commands.registerCommand('nome.setExecutable', function () {
+        vscode.window.showOpenDialog({
+            title: 'Select Nome3 executable',
+            canSelectFiles: true,
+        }).then(files => {
+            if (files) {
+                fp = files[0].fsPath;
+                CONFIG.update('executable', fp);
+                // console.log(`Saved executable path: ${fp}`);
+            }
+        });
+    });
+
+    let runCode = vscode.commands.registerCommand('nome.runCode', function () {
+        if (!CONFIG.get('executable')) {
+            vscode.window.showErrorMessage('Nome3 executable not set!');
         } else {
-            terminal.show(true);
-            terminal.sendText("cd " + path);
-            terminal.sendText("Nome3.exe");
+            const editor = vscode.window.activeTextEditor;
+            const cmd = `${CONFIG.get('executable')} ${editor.document.fileName}`;
+            let terminal = vscode.window.createTerminal("Nome3 execution");
+            terminal.sendText(cmd);
         }
     });
 
-    let configurePath = vscode.commands.registerCommand('nome.configurePath', function () {
-        let options = {
-            prompt: "Please input the path to the NOME executable: ",
-            placeHolder: "E.g. C:\\Users\\Home\\JIPCAD"
-        };
-
-        vscode.window.showInputBox(options).then(value => {
-            if (!value) { return; }
-            path = value;
-        });
-    });
     context.subscriptions.push(seeDocumentation);
-    context.subscriptions.push(runNomeCode);
-    context.subscriptions.push(configurePath);
+    context.subscriptions.push(runCode);
+    context.subscriptions.push(setExecutable);
 }
 
 function deactivate() { }
