@@ -1,3 +1,4 @@
+// Source: https://github.com/JIPCAD/JIPCAD/blob/master/Application/Parsing/Nom.g4
 grammar Nom;
 
 file : command* EOF;

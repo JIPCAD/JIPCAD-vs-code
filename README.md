@@ -1,25 +1,25 @@
 # NOME3 Language Extension README
 
-This is a [Visual Studio Code](https://code.visualstudio.com/) extension for the NOME3 language used for **3D-computer-aided-design** on the **[JIPCAD](https://jipcad.github.io/docs/)** software, supervised by Prof. Carlo Sequin and developed by the JIPCAD group.
+This is a [Visual Studio Code](https://code.visualstudio.com/) extension for the NOME3 language used for **3D-computer-aided-design** on the **[JIPCAD](https://jipcad.github.io/docs/)** software, supervised by Prof. Carlo Sequin and developed by the JIPCAD group. The extension can be installed from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=AaronZheng.nome).
 
 This extension supports files with both the (.nom, .jipcad $*$) endings.
 Enjoy!
 
 ## Features
 ### 1. Autocompletion of commands
-![](.github/images/autocompletion.gif)
+<img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/.github/images/autocompletion.gif">
 
 ### 2. Syntax coloring
-![](.github/images/syntax_highlight.png)
+<img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/.github/images/syntax_highlight.gif">
 
 ### 3. Commenting
-![](.github/images/toggle_block_comment.gif)
+<img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/.github/images/toggle_block_comment.gif">
 
 ### 4. Running of Nome Executable
-![](.github/images/run_nome.gif)
+<img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/.github/images/run_nome.gif">
 
 ### 5. Customize directory of NOME executable
-![](.github/images/remote_running.gif)
+<img src="https://raw.githubusercontent.com/JIPCAD/JIPCAD-vs-code/master/.github/images/remote_running.gif">
 
 
 ## Intended Updates/Improvements
