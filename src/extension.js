@@ -27,7 +27,22 @@ function activate(context) {
             if (files) {
                 fp = files[0].fsPath;
                 CONFIG.update('executable', fp);
-                // console.log(`Saved executable path: ${fp}`);
+
+                if (vscode.extensions.getExtension('formulahendry.code-runner')) {
+                    let CR_CONF = vscode.workspace.getConfiguration('code-runner');
+                    if (CR_CONF === undefined) {
+                        vscode.workspace.getConfiguration().update('code-runner.executorMap', {});
+                    }
+
+                    map = CR_CONF.inspect('executorMap').workspaceFolderValue;
+                    if (map === undefined) {
+                        CR_CONF.update('executorMap', { 'nome': fp });
+                    } else {
+                        map['nome'] = fp;
+                        CR_CONF.update('executorMap', map);
+                    }
+                }
+                console.log(`Saved executable path: ${fp}`);
             }
         });
     });
