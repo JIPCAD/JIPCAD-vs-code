@@ -67,6 +67,7 @@
         ],
         "extensions": [
           ".nom",
+          ".jip",
           ".jipcad"
         ],
         "configuration": "./language-configuration.json"

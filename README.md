@@ -2,7 +2,7 @@
 
 This is a [Visual Studio Code](https://code.visualstudio.com/) extension for the NOME3 language used for **3D-computer-aided-design** on the **[JIPCAD](https://jipcad.github.io/docs/)** software, supervised by Prof. Carlo Sequin and developed by the JIPCAD group. The extension can be installed from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=AaronZheng.nome).
 
-This extension supports files with both the (.nom, .jipcad $*$) endings.
+This extension supports files with the (.nom, .jip, .jipcad $*$) endings.
 Enjoy!
 
 ## Features
